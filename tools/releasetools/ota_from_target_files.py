@@ -242,7 +242,7 @@ OPTIONS.retrofit_dynamic_partitions = False
 OPTIONS.skip_compatibility_check = False
 OPTIONS.output_metadata_path = None
 OPTIONS.override_device = 'auto'
-OPTIONS.backuptool = False
+OPTIONS.backuptool = True
 
 
 METADATA_NAME = 'META-INF/com/android/metadata'
