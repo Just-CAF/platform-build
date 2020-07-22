@@ -967,15 +967,15 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
 
   script.Print("--------------------------------------------------");
   script.Print("");
-  script.Print("       ,-_/         .     ,--.     ,.  .-,--'");
-  script.Print("       '  | . . ,-. |-   |   '    / |   \|__");
-  script.Print("          | | | `-. |    |   .   /~~|-.  |");
-  script.Print("          | `-^ `-' `'   `--'  ,'   `-' `'");
-  script.Print("       /` |");
-  script.Print("       `--'");
+  script.Print("      ,-_/         .     ,--.     ,.  .-,--'");
+  script.Print("      '  | . . ,-. |-   |   '    / |   \|__");
+  script.Print("         | | | `-. |    |   .   /~~|-.  |");
+  script.Print("         | `-^ `-' `'   `--'  ,'   `-' `'");
+  script.Print("      /` |");
+  script.Print("      `--'");
   script.Print("");
   script.Print("--------------------------------------------------");
-  script.Print(" Caf version: %s"%(build_tag));
+  script.Print(" CAF tag: %s"%(build_tag));
   script.Print(" Github: https://github.com/Just-CAF");
   script.Print("--------------------------------------------------");
 
