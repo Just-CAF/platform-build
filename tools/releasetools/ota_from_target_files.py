@@ -967,15 +967,15 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
 
   script.Print("--------------------------------------------------");
   script.Print("");
-  script.Print("       ,-_/         .     ,--.     ,.  .-,--'");
-  script.Print("       '  | . . ,-. |-   |   '    / |   \|__");
-  script.Print("          | | | `-. |    |   .   /~~|-.  |");
-  script.Print("          | `-^ `-' `'   `--'  ,'   `-' `'");
-  script.Print("       /` |");
-  script.Print("       `--'");
+  script.Print("      ,-_/         .     ,--.     ,.  .-,--'");
+  script.Print("      '  | . . ,-. |-   |   '    / |   \|__");
+  script.Print("         | | | `-. |    |   .   /~~|-.  |");
+  script.Print("         | `-^ `-' `'   `--'  ,'   `-' `'");
+  script.Print("      /` |");
+  script.Print("      `--'");
   script.Print("");
   script.Print("--------------------------------------------------");
-  script.Print(" Caf version: %s"%(build_tag));
+  script.Print(" CAF tag: %s"%(build_tag));
   script.Print(" Github: https://github.com/Just-CAF");
   script.Print("--------------------------------------------------");
 
@@ -993,6 +993,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
 
   if OPTIONS.backuptool:
     script.RunBackup("backup", sysmount)
+    script.Print("Running backuptool: backup");
 
   system_progress = 0.75
 
@@ -1056,6 +1057,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   if OPTIONS.backuptool:
     script.ShowProgress(0.02, 10)
     script.RunBackup("restore", sysmount)
+    script.Print("Running backuptool: restore);
 
   script.ShowProgress(0.05, 5)
   script.WriteRawImage("/boot", "boot.img")
